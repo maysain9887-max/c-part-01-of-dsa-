@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+ 
+    //typecasting problems
+    int a=45;
+    char c='d';
+    cout<<"value of a is "<<a<<endl;
+    a=c; //implicit typecasting
+
+    cout<<"value of a is "<<a<<endl;
+     c=a; //implicit typecasting
+    cout<<"value of c is "<<c<<endl;//d is ascii value of 100 but character does not store the value of a it stores the character corresponding to that ascii value
+    }
