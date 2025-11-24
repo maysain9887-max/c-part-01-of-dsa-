@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+ //print 1-100 number with 3 no. jumps
+ // for example 1,4,7,10....
+//  int i;
+//  for( i=1;i<=100;i=i+3){
+//    cout<<i<<endl;
+//  }
+//esa ab hm n no. ke liye bhi kr skte hai
+  int n;
+  cout<<"enter the no. jha se tum start krna chao ho : ";
+  cin>>n;
+   int v;
+  cout<<"enter the no. jinke bich me no. chao ho : ";
+  cin>>v;
+   int x;
+  cout<<"enter the no. jitna tum add  krna chao ho : ";
+  cin>>x;
+  for( int i=n; i<=v;i=i+x){
+   cout<<i<<endl;
+  }
+    }
+
