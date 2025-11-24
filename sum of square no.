@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+   // sum of square of first n natural numbers
+    
+   int n;
+   cout<<"enter a positive numbers:  ";
+   cin>>n;
+   int sum=0;
+   for(int i=1;i<=n;i=i+1){
+        sum = sum + i * i ;
+   }
+   cout<<"the sum of square of first "<< n <<" natural numbers is: "<< sum <<endl;
+    
+}
