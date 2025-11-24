@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   // problem : print the power of numbers
+   for(int j=1;j<=5;j=j+1){
+   int n ;
+   cout <<"enter the number jiski power nikalna chate ho"<<endl;
+   cin>> n;
+
+   int p;
+   cout<<"enter the power:"<<endl;
+   cin >> p;
+
+   int i;
+   int num = 1;
+   for (i=1;i<=p;i=i+1)
+   {
+        num = num* n;
+   }
+   cout << num << endl;
+    }
+}
