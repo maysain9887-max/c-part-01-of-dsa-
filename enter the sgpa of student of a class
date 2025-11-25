@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    // problem: suppose you are a teacher and you develop a program for 50 student to print thier name age class and branch
+  // because students data is mandatory for going the trip so you have to take data from all students and print it
+
+  string name;
+  int age;
+  int semester;
+  string branch;  // cs or it or mech or civil
+  float sgpa;
+
+    for(int i=1;i<=50;i++){
+        cout<<"Enter the name of student "<<i<<": ";
+        cin>>name;
+        cout<<"Enter the age of student "<<i<<": ";
+        cin>>age;
+        cout<<"Enter the semester of student "<<i<<": ";
+        cin>>semester;
+        cout<<"Enter the branch of student "<<i<<": ";
+        cin>>branch;
+        cout<<"enter the marks of student sgpa :"<<i<<":";
+        cin>>sgpa;
+    
+        cout<<"\nDetails of student "<<i<<":"<<endl;
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+        cout<<"Semester: "<<semester<<endl;
+        cout<<"Branch: "<<branch<<endl;
+        cout<<"sgpa :"<<sgpa<<endl;
+        cout<<"--------------------------"<<endl;
+    }
+
+
+}
