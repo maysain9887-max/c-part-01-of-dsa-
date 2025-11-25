@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    string name, branch;
+    int age, semester;
+    int maths, tc, de, dsa, oops, se;
+
+    for (int i = 1; i <= 50; i++) {
+
+        cout << "Enter the name of student " << i << ": ";
+        cin >> name;
+
+        cout << "Enter the age of student " << i << ": ";
+        cin >> age;
+
+        cout << "Enter the semester of student " << i << ": ";
+        cin >> semester;
+
+        cout << "Enter the branch of student " << i << ": ";
+        cin >> branch;
+
+        cout << "Enter marks in Maths: ";
+        cin >> maths;
+
+        cout << "Enter marks in T.C: ";
+        cin >> tc;
+
+        cout << "Enter marks in D.E: ";
+        cin >> de;
+
+        cout << "Enter marks in D.S.A: ";
+        cin >> dsa;
+
+        cout << "Enter marks in OOPS: ";
+        cin >> oops;
+
+        cout << "Enter marks in S.E: ";
+        cin >> se;
+
+
+        // Output
+        cout << "\n===== Details of Student " << i << " =====" << endl;
+        cout << "Name     : " << name << endl;
+        cout << "Age      : " << age << endl;
+        cout << "Semester : " << semester << endl;
+        cout << "Branch   : " << branch << endl;
+        cout << "Maths    : " << maths << endl;
+        cout << "T.C      : " << tc << endl;
+        cout << "D.E      : " << de << endl;
+        cout << "D.S.A    : " << dsa << endl;
+        cout << "OOPS     : " << oops << endl;
+        cout << "S.E      : " << se << endl;
+
+        cout << "----------------------------------------\n" << endl;
+    }
+
+    return 0;
+}
