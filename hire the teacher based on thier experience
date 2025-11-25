@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    //problem: print collage teacher name , qualification , subject , experience 
+    for(int i=0;i<5;i=i+1){
+
+
+  cout << "if you are interested to become a collage teacher then fill the form "<<endl;
+
+
+  cout<< " welcome please fill that details or information: "<<endl;
+
+    cout<<" what's your name ? :  ";
+    string name;
+    cin>>name;
+   
+   
+    cout<<" what's your qualification ? :   ";
+    string qualification;
+    cin>>qualification;
+    
+    
+    cout<<" what's subject you teach ? :  ";
+    string subject;
+    cin>>subject;
+    
+    
+    cout<<" what's your experience ? :  ";
+    int experience;
+    cin>>experience;
+
+
+    cout<<" teacher name is : "<<name<<endl;
+    cout<<" teacher qualification is : "<<qualification<<endl;
+    cout<<" teacher subject is : "<<subject<<endl;
+    cout<<" teacher experience is : "<<experience<<endl;
+    if( experience >= 5)
+    {
+        cout<<" you are hired as a senior teacher "<<endl;
+    }
+    else
+    {
+        cout<<" sorry you are not hired ????? "<<endl;
+ }
+}
+
+    return 0;
+}
