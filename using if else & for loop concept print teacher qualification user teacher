@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    //problem: print collage teacher name , qualification , subject , experience 
+    for(int i=0;i<5;i=i+1){
+
+  
+
+    cout<<" what's your name ? :  ";
+    string name;
+    cin>>name;
+   
+   
+    cout<<" what's your qualification ? :   ";
+    string qualification;
+    cin>>qualification;
+    
+    
+    cout<<" what's subject you tech ? :  ";
+    string subject;
+    cin>>subject;
+    
+    
+    cout<<" what's your experience ? :  ";
+    string experience;
+    cin>>experience;
+
+
+    cout<<" teacher name is : "<<name<<endl;
+    cout<<" teacher qualification is : "<<qualification<<endl;
+    cout<<" teacher subject is : "<<subject<<endl;
+    cout<<" teacher experience is : "<<experience<<endl;
+
+  }
+
+    return 0;
+}
