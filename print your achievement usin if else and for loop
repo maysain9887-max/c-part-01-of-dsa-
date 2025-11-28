@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    for(int i=1;i<=10;i=i+1){
+    cout << "Enter the number you obtained : ";
+    cin >> n;
+
+    if (n >= 35 && n <= 55) {
+        cout << "not good but you are pass " << endl;
+    } else if(n < 35 && n >= 0) {
+        cout << "Fail" << endl;
+    }
+    else if(n > 55 && n <= 100) {
+        cout << "Good" << endl;
+    }
+    else {
+        cout << "Invalid input" << endl;
+    }
+    }
+    return 0;
+}
