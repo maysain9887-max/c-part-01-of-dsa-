@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank Portfolio</title>
+
+  <style>
+/* ----------------------------------------------------
+   GLOBAL RESETS
+---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(223, 223, 221);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------------------------------
+   HERO CONTAINER
+---------------------------------------------------- */
+.container {
+  border: 2px solid beige;
+  background-color: #F3F3E0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  position: absolute;
+  right: -100px;
+  top: -120px;
+  content: "";
+  background-color: #051116;
+  width: 60vw;
+  height: 130vh;
+  transform: rotate(5deg);
+}
+
+/* HERO TEXT */
+.intro {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.name {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+.front {
+  margin-left: 10%;
+  font-size: large;
+}
+
+/* ----------------------------------------------------
+   NAVIGATION
+---------------------------------------------------- */
+.nav {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+  width: 30vw;
+  z-index: 3;
+}
+
+.nav a {
+  color: beige;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  transition: 0.5s ease;
+}
+
+.nav a:hover {
+  background-color: burlywood;
+  color: #222;
+  transform: scale(1.2);
+}
+
+.nav a:active {
+  color: darkblue;
+  transform: scale(0.5);
+  box-shadow: 0 5px 10px blueviolet;
+}
+
+/* ----------------------------------------------------
+   IMAGE IN HERO
+---------------------------------------------------- */
+.img {
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+  z-index: 2;
+}
+
+img {
+  height: 600px;
+}
+
+/* ----------------------------------------------------
+   BUTTON ANIMATIONS
+---------------------------------------------------- */
+button {
+  border: none;
+  background-color: #071922;
+  cursor: pointer;
+  color: beige;
+  font-size: large;
+  padding: 10px 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.hire {
+  margin-top: 3%;
+}
+
+.hire:hover button {
+  transform: scale(1.1);
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.hire:active button {
+  animation: bounce 0.5s ease;
+}
+
+/* ----------------------------------------------------
+   ABOUT ME SECTION
+---------------------------------------------------- */
+.parent {
+  height: 60vh;
+  width: 100vw;
+  padding: 30px;
+  margin: 50px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ----------------------------------------------------
+   SKILL SECTION
+---------------------------------------------------- */
+.skill-card {
+  background-color: white;
+  max-width: 100vw;
+  height: 50vh;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.skill-info {
+  margin-top: 20px;
+}
+
+.skill-info h2 {
+  color: #444;
+}
+
+.skill-info p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* ----------------------------------------------------
+   CONTACT SECTION
+---------------------------------------------------- */
+.target2 {
+  width: 40vw;
+  height: 40vh;
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ----------------------------------------------------
+   NEW SPLIT SECTION (MONU/MONIKA)
+---------------------------------------------------- */
+.mayank {
+  display: flex;
+  height: 100vh;
+}
+
+.monu {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.monika {
+  width: 50%;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform-origin: bottom;
+}
+
+.monika:hover {
+  transform: perspective(600px) rotateX(7deg);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.shyam {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.ram {
+  font-size: 18px;
+  text-align: center;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.photo {
+  width: 200px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  background-color: black;
+}
+
+/* ----------------------------------------------------
+   TOP FIXED NAV BAR
+---------------------------------------------------- */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c0066;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+
+<!-- ----------------------------------------------------
+      FIXED NAV BAR
+---------------------------------------------------- -->
+<nav class="nav-bar">
+  <div class="logo">my portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#">home</a></li>
+    <li><a href="#target">overview</a></li>
+    <li><a href="#target1">projects</a></li>
+    <li><a href="#target3">contact</a></li>
+  </ul>
+</nav>
+
+<!-- ----------------------------------------------------
+      SPLIT INTRO SECTION
+---------------------------------------------------- -->
+<div class="mayank">
+  <div class="monu">
+    <h2 class="shyam">Hi! I am Mayank Sain</h2>
+    <p class="ram">🖐 Aspiring Frontend Developer</p>
+  </div>
+
+  <div class="monika">
+    <img src="mayankphpto.jpg" alt="Developer Image" class="photo">
+    <p class="ram">Hover to see the fold animation</p>
+  </div>
+</div>
+
+<!-- ----------------------------------------------------
+      ABOUT ME SECTION
+---------------------------------------------------- -->
+<div class="parent" id="target">
+  <h1 style="text-align: center; color: #222;">About Me</h1>
+  <p>
+    My name is <strong>Mayank Sain</strong> from <strong>Jaipur, Rajasthan</strong>.
+    I completed my schooling at <strong>A.B.V.M</strong> and am currently pursuing <strong>B.Tech</strong> at Anand International College.
+  </p>
+  <p>
+    I love <strong>gardening, cricket, and content creation</strong>.
+    I also upload videos on <strong>YouTube</strong>.
+  </p>
+  <p>
+    I am passionate about fitness and maintain a healthy lifestyle.
+  </p>
+</div>
+
+<!-- ----------------------------------------------------
+      SKILL SECTION
+---------------------------------------------------- -->
+<div class="skill-card" id="target1">
+  <h1 style="text-align: center;">My Skills</h1>
+
+  <div class="skill-info">
+    <h2>Web Development</h2>
+    <p>HTML & CSS expert, learning JavaScript</p>
+  </div>
+
+  <div class="skill-info">
+    <h2>Tools & Technologies:</h2>
+    <p>HTML5, CSS, VS Code, GitHub</p>
+  </div>
+
+  <div class="skill-info">
+    <h2>Projects:</h2>
+    <p>Simple portfolio website showcasing my work.</p>
+  </div>
+</div>
+
+<!-- ----------------------------------------------------
+      CONTACT SECTION
+---------------------------------------------------- -->
+<div class="target2" id="target3">
+  <h1 style="text-align: center;">Contact Me</h1>
+  <p><b>MOBILE NO.:</b> 9887789609</p>
+  <p><b>EMAIL ID:</b> mayank98@gmail.com</p>
+  <p><b>INSTA ID:</b> mayank.007</p>
+</div>
+
+</body>
+</html>
