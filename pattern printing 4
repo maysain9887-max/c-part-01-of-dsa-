@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    //wap  to print :
+    // 10 10 10 10 10
+    // 20 20 20 20 20
+    // 30 30 30 30 30
+    // 40 40 40 40 40
+    // 50 50 50 50 50
+
+
+
+
+    for(int row=1;row<=5;row=row+1)
+    {
+         
+        for(int col=1;col<=5;col=col+1)
+        { 
+            cout<< row * 10 <<"   ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
