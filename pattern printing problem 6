@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+    //wap  to print :
+    // 1 4 9 16 25 36
+    // 1 4 9 16 25 36
+    // 1 4 9 16 25 36
+    // 1 4 9 16 25 36
+    // 1 4 9 16 25 36
+
+
+
+
+    for(int row=1;row<=5;row=row+1)
+    {
+         
+        for(int col=1;col<=5;col=col+1)
+        { 
+            cout<< col*col <<"   ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
