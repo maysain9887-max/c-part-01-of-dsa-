@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+// problem :
+// print :
+// aaaaaa
+// ;;;;;;;
+// zzzzzz
+
+// it means a to z in seaquence order and reverse order and with thier ascaii values
+
+// for(int row=1;row<=26;row=row+1)
+// {
+   
+//     for(char col='a';col<='z';col=col+1)
+//     {
+    
+//         cout<< col<<"   ";
+//     }
+//     cout<<endl;
+// }
+
+
+for(char row='a';row<='z';row=row+1)
+{
+   
+    for(char col='a';col<='z';col=col+1)
+    {
+    
+        cout<< row<<"   ";
+    }
+    cout<<endl;
+}
+for(char row='a';row<='z';row=row+1)
+// {
+//ascaii values
+   
+//     for(int col=1;col<=26;col=col+1)
+//     {
+    
+//         cout<< row +(col-1)<<"   ";
+//     }
+//     cout<<endl;
+// }
+return 0;
+}
